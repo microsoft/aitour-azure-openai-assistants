@@ -1,32 +1,38 @@
-To help prepare content for AI Tour, please use this template repository for organizing your sessions and preparing the content for future presentors.
-1. Update this readme with the todo's listed below
-2. The src folder has been created for all development tasks when creating this session
-3. The Lab folder is in-person and async participation with content, please update this folder with instructions for participants to follow along.
-4. The Presenter Notes folder is the train the trainer section. Here add any slide decks, demo videos, and other content as needed. This page has a rough layout to provide ideas but can be edited as needed.
-5. If you are taking advantage of the static front end site, edit the content in the _config.yml file as needed (specifically the title and description)
-
-
-# [TODO: Insert Session Title]
+# Introduction to Azure Open AI Assistants
 
 This repo is intended as a template for Microsoft AI Tour repositories
 
 ## Session Desciption
 
-TODO: Add short description of the session. Please note this description should be at a technical level that anyone from decision makers to conference attendees can understand.
+The OpenAI Assistants API allows you to build conversational agents that can understand and respond to user inputs. You can use the API to automate tasks, provide information, or guide users through a process.
+
+The Assistants API is not the only way to build conversational agents, but it offers several advantages:
+
+1. Simplicity: The API abstracts away the complexity of building a conversational agent, allowing you to focus on the content and logic of the conversation.
+2. Scalability: The API is designed to handle a large number of concurrent users, making it suitable for production use.
+3. Customization: The API allows you to customize the behavior of the assistant by providing training data and defining conversational flows.
+4. Integration: The API can be integrated with other services and systems, allowing you to build assistants that interact with external data sources.
 
 ## Learning Outcomes
-TODO: Add a list of what you hope the attendee will take away from this session. This can be skills, technology, appreciation, etc.
+
+1. Understand the OpenAI Assistants API
+1. Introductions to the Azure OpenAI Assistants Playground
+1. Understand Azure OpenAI Chat Completion Function Calling
+1. Learn how to build conversational agents
+
 
 ## Technology Used
-TODO: Add a list of any technology or software used.
+
+1. Azure OpenAI Assistants API
+1. Azure OpenAI Assistants Playground
+1. Jupyter Notebooks
+1. OpenAI SDK
 
 ## Additional Resources and Continued Learning
-TODO: If you would like to link the user to further learning, please enter that here.
 
 | Resources          | Links                             | Description        |
 |:-------------------|:----------------------------------|:-------------------|
-| Future Learning 1  | [Link 1](https://www.google.com/) | Learn more about X |
-| Future Learning 2  | [Link 2](https://www.google.com/) | Learn more about Y |
+| Future Learning 1  | [Getting started with Azure OpenAI Assistants](https://learn.microsoft.com/azure/ai-services/openai/how-to/assistant) | Learn more about Assistants|
 
 ## Content Owners
 
