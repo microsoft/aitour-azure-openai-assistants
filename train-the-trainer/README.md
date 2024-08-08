@@ -26,7 +26,7 @@ code.
 | Videos            | - [OpenAI Assistants API – Course for Beginners](https://www.youtube.com/watch?v=qHPonmSX4Ms&t=10648s) | YouTube freeCodeCamp.org |
 | Demo 1            | - [Introduction to the Azure OpenAI Assistants Playground](demo-1/README.md) | Silent recording embedded in the slides  | 
 | Demo 2            | - [Introduction to Azure OpenAI Chat Completion Function Calling](demos-2-3/demo-2-function-calling.ipynb) | Silent recording embedded in the slides  | 
-| Demo 3            | - [Introduction to the Asistants API SDK](demos-2-3/demo-3-function-calling.ipynb) | Silent recording embedded in the slides | 
+| Demo 3            | - [Introduction to the Asistants API SDK](demos-2-3/demo-3-contoso-sales-analysis.ipynb) | Silent recording embedded in the slides | 
 
 ## Get Started
 
@@ -55,7 +55,7 @@ The [slides](https://microsoft.sharepoint.com/:p:/t/AI-Tour-FY25/EWq0D6KsooxAsOA
 ## Deployment / Preparation
 
 1. Access to a deployment of GPT-4o
-1. Codespaces or VS Code Docker for running the code
+1. Codespaces or VS Code Docker for running the code demos 2 and 3. See the [demos](demos-2-3/README.md) for more information
 1. No other resources are required
 
 ## Demos
