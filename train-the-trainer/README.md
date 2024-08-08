@@ -1,69 +1,98 @@
-## TODO:
-Update this page as you see fit to properly train a future presenter of your content. A past train the trainer repo is included below for your assitance, but feel free to make any changes.
+# Contoso Sales Analysis Assistant
 
-Note: Please make sure to update any links within the markdown so they point to the correct file.
+## Chat Completions API vs Assistants API
 
-## How To Use
+The primitives of the Chat Completions API are Messages, on which you perform a Completion with a Model (gpt-3.5-turbo, gpt-4, etc). It is lightweight and powerful, but inherently stateless, which means you have to manage conversation state, tool definitions, retrieval documents, and code execution manually.
 
-Welcome,
+### The primitives of the Assistants API are
 
-We're glad you are here and look forward to your delivery of this amazing content. As an experienced presenter, we know you know HOW to present so this guide will focus on WHAT you need to present. It will provide you a full run-through of the presentation created by the presentation design team. 
+- Assistants, which encapsulate a base model, instructions, tools, and (context) documents,
+- Threads, which represent the state of a conversation, and
+- Runs, which power the execution of an Assistant on a Thread, including textual responses and multi-step tool use.
 
-Along with the video of the presentation, this document will link to all the assets you need to successfully present including PowerPoint slides and demo instructions &
-code.
+## Why use the OpenAI Assistants API
 
-1.  Read document in its entirety.
-2.  Watch the video presentation
-3.  Ask questions of the Lead Presenter
+The OpenAI Assistants API allows you to build conversational agents that can understand and respond to user inputs. You can use the API to automate tasks, provide information, or guide users through a process.
 
-## File Summary
+The Assistants API is not the only way to build conversational agents, but it offers several advantages:
 
-| Resources          | Links                            | Description |
-|-------------------|----------------------------------|-------------------|
-| PowerPoint        | - [Presentation](presentations.md) | Slides |
-| PPT Recording     | - [Presentation](https://globaleventcdn.blob.core.windows.net/assets/data/data10/DATA10.mp4) | Video Recording of the PowerPoint slides with no audio |
-| Videos            | - [Microsoft Ignite Orlando Recording](https://myignite.techcommunity.microsoft.com/sessions/84354) | Example Presetations of this Session |
-| Demos             | - [Demo 1 - Exploring a Modern Data Warehouse](demos/README.md#demo-1---exploring-a-modern-data-warehouse) | Additional Demo Content | 
-| Demo Recordings           | - [Data10 - Prequisites](https://globaleventcdn.blob.core.windows.net/assets/data/data10/Data10_Prerequisites-NoAudio.mp4) | Recording of the Demo Live 1 | 
-| Demo Recordings           | - [Data10 - Demo](https://globaleventcdn.blob.core.windows.net/assets/data/data10/Data10-Demo-NoAudio.mp4 ) | Recording of the Demo Live 2 | 
+1. Simplicity: The API abstracts away the complexity of building a conversational agent, allowing you to focus on the content and logic of the conversation.
+2. Scalability: The API is designed to handle a large number of concurrent users, making it suitable for production use.
+3. Customization: The API allows you to customize the behavior of the assistant by providing training data and defining conversational flows.
+4. Integration: The API can be integrated with other services and systems, allowing you to build assistants that interact with external data sources.
 
-## Get Started
+## Objective
 
-This training repository is divided in to the following sections:
+This notebook demonstrates the following:
 
-| [Slides](#slides) | [Demos](demos/README.md) | [Deployment](deployment/README.md) | 
-|-------------------|---------------------------|--------------------------------------
-| 28 slides - 30 minutes| 1 demos - 15 minutes | Demo setup
+1. Generative AI
+1. Function calling
+1. Code Generation
 
-## Slides
+Reference:
+- Learn more about how to use Assistants with our [How-to guide on Assistants](https://learn.microsoft.com/en-us/azure/ai-services/openai/how-to/assistant)
+- [Assistants OpenAI Overview](https://platform.openai.com/docs/assistants/overview) 
 
-The [slides](presentations.md) have presenter notes in each part of the session
+## Programming Languages
+ - Python
 
-### Timing
+## Deploy Azure OpenAI Resources
 
-| Time        | Description 
---------------|-------------
-0:00 - 5:00   | Intro to the session 
-5:00 - 15:00  | Why Modern Data Warehousing
-15:00 - 20:00 | Building the Modern data warehouse
-20:00 - 35:00 | Designing a modern data warehouse solution
-35:00 - 40:00 | The evolution of cloud scale analytics
-40:00 - 45:00 | Session review
+Create OpenAI resources in Azure portal and get the key and endpoint to use in the code. You can follow the instructions [here](https://learn.microsoft.com/en-us/azure/ai-services/openai/how-to/create-resource).
 
-## Deployment / Preparation
+Ideally use the OpenAI GPT-4o model for best results.
 
->**What's Here?** Deploying the demo environment on Azure - including the prerequisites.
+1. Rename the .env.sample file to .env
+2. Add the OpenAI key and endpoint in the .env file
 
-[Instructions and prerequisites are outlined here](deployment/README.md). 
+    ```text
+    OPENAI_URI=
+    OPENAI_KEY=
+    OPENAI_VERSION=2024-05-01-preview
+    OPENAI_GPT_DEPLOYMENT=
+    ```
+    
+  ## Installation
+
+Create a Python Virtual Environment
+
+### Windows
+
+1. Create a new Python virtual environment by running the following command in your terminal:
+
+    ```bash
+    python -m venv .venv
+    ```
+
+2. Activate the virtual environment:
+
+    ```bash
+    .venv\Scripts\activate
+    ```
+
+### macOS and Linux
+
+1. Create a new Python virtual environment by running the following command in your terminal:
+
+    ```bash
+    python3 -m venv .venv
+    ```
+
+2. Activate the virtual environment:
+
+    ```bash
+    source .venv/bin/activate
+    ```
+
+### Update pip
+
+```bash
+pip install --upgrade pip
+```
+
+### Pip install required libraries
+
+pip install -r requirements.txt
 
 
-## Demos
-
-> **What's Here?** Pre-delivery preparation, stage ready videos, required files (such as JSON templates), and walk-through videos
-
-Detailed explanations of each demonstration associated with this presentation can be found in this section. There are 3 "live from stage" technical demonstrations that utilize a number of tools both in and out of Azure. [You can get a high level overview of the tools and how we will be using them here](demos/README.md).
-
-| Demo 	                                                                                               | Minutes | Video |
--------------------------------------------------------------------------------------------------------|---------|----------------- | 
-|  [1 - Exploring a Modern Data Warehouse](demos/README.md#demo-1---exploring-a-modern-data-warehouse) | 15       | [Link](https://globaleventcdn.blob.core.windows.net/assets/data/data10/Data10-Demo-NoAudio.mp4) |
 
