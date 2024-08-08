@@ -48,7 +48,7 @@ The following steps will guide you through the process of creating an assistant 
    Remember to maintain a professional and courteous tone throughout your interactions. Avoid sharing any sensitive or confidential information.
    ```
 1. Select **Tools** and enable **Code Interpreter**.
-1. Select the adjacent **+Add files** and upload the **Contoso-Sales-Data.csv** file from the data folder.
+1. Select **+Add files** for the **Code Interpreter** and upload the **Contoso-Sales-Data.csv** file from the data folder.
 
 ## How to Load an Existing Assistant
 
