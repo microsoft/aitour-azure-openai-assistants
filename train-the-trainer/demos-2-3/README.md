@@ -2,7 +2,7 @@
 
 ## Programming Languages
 
- - Python
+- Python
 
 ## Deploy Azure OpenAI Resources
 
@@ -20,17 +20,31 @@ These demos were tested with Azure OpenAI GPT-4o model. For best results use the
     OPENAI_GPT_DEPLOYMENT=
     ```
 
-## Demo setup
+## Demos 2 and 3
 
-The demos can be run in a Codespace or a local Python environment.
+1. An Azure subscription
+1. Access to the Azure OpenAI GPT-4o model deployment
+1. The demos require the Azure OpenAI key, endpoint, and deployment to be added to the **./demos-2-3/.env** file.
+1. Demo 2 and 3 are run in a Python environment. You will need to install the required libraries and run the Jupyter Notebooks. You can run the demos in a Codespace or locally in a dev container or a Python virtual environment.
+
+### Demo 2
+
+1. Set up the .env file with the Azure OpenAI key, endpoint, and deployment.
+1. Run the **[Introduction to Azure OpenAI Function Calling](demo-2-function-calling.ipynb)** Jupyter Notebook. Note, you'll be prompted to select a kernel source. Select the Python Environments, then select the **Recommended** Python environment.
+
+### Demo 3
+
+1. Run the Jupyter Notebook **demo-3-contoso-sales-analysis.ipynb**.
+1. Set up the .env file with the Azure OpenAI key, endpoint, and deployment.
+1. Run the **[Contoso Sales Analysis Assistant](demo-3-contoso-sales-analysis.ipynb)** Jupyter Notebook. Note, you'll be prompted to select a kernel source. Select the Python Environments, then select the **Recommended** Python environment.
 
 ### Codespaces
 
 Open the repo [Introduction to Azure Open AI Assistants](https://github.com/microsoft/aitour-azure-openai-assistants) in a Codespace and run the demos in the Jupyter Notebooks.
 
-## Local installation
+### Local installation
 
-## Dev Containers
+### Dev Containers
 
 The demos can be run in a Dev Container in Visual Studio Code.
 
@@ -39,7 +53,7 @@ The demos can be run in a Dev Container in Visual Studio Code.
 1. Install Docker
 1. Open the repo in Visual Studio Code and click the "Reopen in Container" button
 
-## Local setup
+### Python Virtual Environment
 
 Create a Python Virtual Environment
 
@@ -79,7 +93,6 @@ pip install --upgrade pip
 
 ### Pip install required libraries
 
+```bash
 pip install -r requirements.txt
-
-
-
+```

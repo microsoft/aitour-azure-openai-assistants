@@ -8,7 +8,7 @@ To successfully follow this demo, you will need the following resources:
 
 - An Azure subscription
 - Access to the Azure AI Studio Assistants API (Preview) Playground
-- The Contoso Retail data CSV file (found in the data folder)
+- A local clone of this [Introduction to Azure Open AI Assistants](https://github.com/microsoft/aitour-azure-openai-assistants) repo on your computer as you will need to upload the **demo-1/data/Contoso-Sales-Data.csv** file to the Azure OpenAI Assistants Playground.
 - An OpenAI model deployment; as of August 2024, it is recommended to use GPT-4o
 
 ## How to Create a New Assistant
@@ -23,6 +23,7 @@ The following steps will guide you through the process of creating an assistant 
 1. Select Deployment, and choose GPT-4o.
 1. Name the assistant Contoso Sales Assistant.
 1. Select the Prompt section and copy and paste the following text:
+
    ```text
    You are an advanced sales analysis assistant for Contoso. Your role is to be polite, professional, helpful, and friendly while assisting users with their sales data inquiries.
 
@@ -47,6 +48,7 @@ The following steps will guide you through the process of creating an assistant 
 
    Remember to maintain a professional and courteous tone throughout your interactions. Avoid sharing any sensitive or confidential information.
    ```
+
 1. Select **Tools** and enable **Code Interpreter**.
 1. Select **+Add files** for the **Code Interpreter** and upload the **Contoso-Sales-Data.csv** file from the data folder.
 
@@ -121,6 +123,7 @@ Below is an example conversation flow. Note that the actual interaction may vary
    ```text
    what were the products with the highest discounts, just give me the top 5, display as a pie chart
    ```
+
    ![what were the products with the highest discounts, just give me the top 5, display as a pie chart](media/products-with-highest-discounts.png)
 
 1. Let's dig into skiing gear sales
