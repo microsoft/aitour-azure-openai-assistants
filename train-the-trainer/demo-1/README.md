@@ -21,7 +21,12 @@ The following steps will guide you through the process of creating an assistant 
 1. From the left menu, select Assistants.
 1. Click on + New Assistant to create a new assistant.
 1. Select Deployment, and choose GPT-4o.
-1. Name the assistant Contoso Sales Assistant.
+1. Name the assistant
+
+   ```text
+   Contoso Sales Assistant
+   ```
+
 1. Select the Prompt section and copy and paste the following text:
 
    ```text
