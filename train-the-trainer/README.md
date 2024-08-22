@@ -15,8 +15,8 @@ code.
 
 | Resources          | Links                            | Description |
 |-------------------|----------------------------------|-------------------|
-| PowerPoint        | - [Presentation](https://microsoft.sharepoint.com/:p:/t/AI-Tour-FY25/EWq0D6KsooxAsOApmBEcOtMBbe036J_zeU2rm-E-WZzbow?e=HouuhG) | Slides |
-| PPT Recording    | - [Presentation](https://microsoft.sharepoint.com/:p:/t/AI-Tour-FY25/EWq0D6KsooxAsOApmBEcOtMBbe036J_zeU2rm-E-WZzbow?e=HouuhG) | Embedded into the PowerPoint |
+| PowerPoint        | - [Presentation](https://aka.ms/AArxlty) | Slides |
+| PPT Recording    | - [Presentation](https://aka.ms/AArxlty) | Embedded into the PowerPoint |
 | Videos            | - [Build sophisticated custom copilots with Azure OpenAI Assistants](https://build.microsoft.com/en-US/sessions/2ac412b4-3e6a-4107-8c62-910e18cbe94c) | Build 2024 |
 | Videos            | - [OpenAI Assistants API – Course for Beginners](https://www.youtube.com/watch?v=qHPonmSX4Ms&t=10648s) | YouTube freeCodeCamp.org |
 | Demo 1            | - [Introduction to the Azure OpenAI Assistants Playground](demo-1/README.md) | Silent recording embedded in the slides  |
@@ -28,12 +28,12 @@ code.
 This training repository is divided in to the following sections:
 
 | [Slides](#slides) | [Demos](demos/README.md) | [Deployment](deployment/README.md) |
-|-------------------|---------------------------|--------------------------------------
+|-------------------|---------------------------|--------------------------------------|
 | 28 slides - 30 minutes| 3 demos - 15 minutes | Demo setup
 
 ## Slides
 
-The [slides](https://microsoft.sharepoint.com/:p:/t/AI-Tour-FY25/EWq0D6KsooxAsOApmBEcOtMBbe036J_zeU2rm-E-WZzbow?e=HouuhG) have presenter notes in each part of the session
+The [slides](https://aka.ms/AArxlty) have presenter notes in each part of the session
 
 ### Timing
 
@@ -50,7 +50,7 @@ The [slides](https://microsoft.sharepoint.com/:p:/t/AI-Tour-FY25/EWq0D6KsooxAsOA
 ## Deployment / Preparation
 
 1. Access to a deployment of GPT-4o
-1. Codespaces or VS Code Docker for running the code demos 2 and 3. See the [demos](demos-2-3/README.md) for more information
+1. GitHub Codespaces or VS Code Docker for running the code demos 2 and 3. See the [demos](demos-2-3/README.md) for more information
 1. No other resources are required
 
 ## Demos

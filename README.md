@@ -1,8 +1,6 @@
 # Introduction to Azure Open AI Assistants
 
-This repo is intended as a template for Microsoft AI Tour repositories
-
-## Session Desciption
+## Session Description
 
 The OpenAI Assistants API allows you to build conversational agents that can understand and respond to user inputs. You can use the API to automate tasks, provide information, or guide users through a process.
 
@@ -19,7 +17,6 @@ The Assistants API is not the only way to build conversational agents, but it of
 1. Introductions to the Azure OpenAI Assistants Playground
 1. Understand Azure OpenAI Chat Completion Function Calling
 1. Learn how to build conversational agents
-
 
 ## Technology Used
 
@@ -45,9 +42,16 @@ The Assistants API is not the only way to build conversational agents, but it of
 "/><br />
         <sub><b>Dave Glover
 </b></sub></a><br />
-            <a href="https://github.com/gloveboxes" title="talk">📢</a> 
+            <a href="https://github.com/gloveboxes" title="talk">📢</a>
+    </td>
+        <td align="center"><a href="http://learnanalytics.microsoft.com">
+        <img src="https://github.com/softchris.png" width="100px;" alt="Dave Glover
+"/><br />
+        <sub><b>Chris Noring
+</b></sub></a><br />
+            <a href="https://github.com/softchris" title="talk">📢</a>
     </td>
 </tr></table>
 
-<!-- ALL-CONTRIBUTORS-LIST:END -->
 
+<!-- ALL-CONTRIBUTORS-LIST:END -->
