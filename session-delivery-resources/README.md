@@ -15,7 +15,7 @@ code.
 
 | Resources          | Links                            | Description |
 |-------------------|----------------------------------|-------------------|
-| PowerPoint        | - [Presentation](https://aka.ms/AArxlty) | Slides |
+| PowerPoint        | - [Presentation](https://aka.ms/AArxlty) | Slides, [Additional Languages](https://github.com/microsoft/aitour-azure-openai-assistants/blob/main/session-delivery-resources/README.md#slides-in-additional-languages) |
 | PPT Recording    | - [Presentation](https://aka.ms/AArxlty) | Embedded into the PowerPoint |
 | Videos            | - [Build sophisticated custom copilots with Azure OpenAI Assistants](https://build.microsoft.com/en-US/sessions/2ac412b4-3e6a-4107-8c62-910e18cbe94c) | Build 2024 |
 | Videos            | - [OpenAI Assistants API – Course for Beginners](https://www.youtube.com/watch?v=qHPonmSX4Ms&t=10648s) | YouTube freeCodeCamp.org |
@@ -47,6 +47,12 @@ The [slides](https://aka.ms/AArxlty) have presenter notes in each part of the se
 35:00 - 40:00 | Demo 3: Introduction to the Asistants API SDK
 40:00 - 45:00 | Session review
 
+### Slides in additional languages
+| Language | Last updated | 
+|------------------- | ---- |
+| [Spanish](https://aka.ms/AAs7ett) | 2024.09.16 | 
+| [Portuguese](https://aka.ms/AAs7etx) | 2024.09.16| 
+
 ## Deployment / Preparation
 
 1. Access to a deployment of GPT-4o
@@ -56,3 +62,10 @@ The [slides](https://aka.ms/AArxlty) have presenter notes in each part of the se
 ## Demos
 
 Demo walkthroughs can be found embedded in the PowerPoint slides.
+
+## Change Log
+Here is a log of the changes made to this file:
+
+| Date       | Changes |
+|------------|---------|
+| 2024.09.16 | Added Change log, Additional language section with Spanish and Portuguese PowerPoint slides |
