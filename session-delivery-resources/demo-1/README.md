@@ -72,37 +72,39 @@ Suggest setting light mode as generally better for an audience.
 
 #### Start the conversation
 
-This is the demo script used in the video, but keep in mind that the application is powered by a large language model (LLM), so conversations will vary, so practice and be ready to adapt depending on the responses.
+This is the demo script used in the video, but since the application is powered by a large language model (LLM), conversations will vary. Be prepared to adapt based on the responses you receive.
+
+Feel free to customize the script as needed; it serves as a guide rather than a strict rule. However, be aware that some prompts may produce large amounts of data, which can be tedious for your audience as it streams to the assistant. To maintain engagement, it's best to use prompts that generate concise responses.
 
 There are prompt starters in the chat window. The user can select these to start the conversation.
 
 1. Select **Help**.
    This will provide a list of sample questions that the assistant can answer.
-1. Select **Help in \<Your Preferred Language>**. (e.g., Help in Dutch, Help in French, etc.). This will provide a list of sample questions that the assistant can answer in the selected language.
-1. You can demo in your preferred language, but be sure to test the language support first.
-1. Select **Start new chart**.
-1. Select the 2nd from left starter.
+2. Select **Help in \<Your Preferred Language>**. (e.g., Help in Dutch, Help in French, etc.). This will provide a list of sample questions that the assistant can answer in the selected language.
+3. You can demo in your preferred language, but be sure to test the language support first.
+4. Select **Start new chart**.
+5. Select the 2nd from left starter.
    * Create a vivid pie chart of sales by region.
 
    The LLM will generate a SQL query, next the LLM will call the **ask_database** function to execute the query and return the results. The LLM will then generate the Python code to create the pie chart.
 
-1. Next, we'll ask about beginner-friendly tents. The sales database has limited knowledge of the products as the focus of the database is sales data, so the LLM will generate a response based on the data available.
+6. Next, we'll ask about beginner-friendly tents. The sales database has limited knowledge of the products as the focus of the database is sales data, so the LLM will generate a response based on the data available.
 
    **What beginner-friendly tents does Contoso sell?**
 
-1. Next, we'll going to upload a Contoso Tents Datasheet to the Assistants API. This will allow the assistant to provide more detailed information about the tents. The Assistants API will vectorize the PDF and store the data in the database and the LLM will be able to access the data using hybrid (semantic and keyword) queries.
+7. Next, we'll going to upload a Contoso Tents Datasheet to the Assistants API. This will allow the assistant to provide more detailed information about the tents. The Assistants API will vectorize the PDF and store the data in the database and the LLM will be able to access the data using hybrid (semantic and keyword) queries.
 
    1. Drag and drop the **contoso-tents-datasheet.pdf** onto the Contoso Sales Assistant. The assistant will now have access to the tent data. The pdf is located in the **datasheet** folder for **demo-1** of this repository.
-   1. Add the prompt **What beginner-friendly tents does Contoso sell?**
-   1. Add resubmit the question.
+   2. Add the prompt **What beginner-friendly tents does Contoso sell?**
+   3. Add resubmit the question.
 
    Now the assistant has access to the tent data and can provide more detailed information.
 
-1. Now, we're going to combine the data from the sales database and the tent datasheet to provide a more detailed analysis.
+8. Now, we're going to combine the data from the sales database and the tent datasheet to provide a more detailed analysis.
 
    Submit the following prompt: **Show sales of tents by region and include a brief description in the table about each tent.**
 
-1. Finally, let's use the Assistants API and the code interpreter to generate a report on the sales of beginner-friendly tents in Excel format.
+9. Finally, let's use the Assistants API and the code interpreter to generate a report on the sales of beginner-friendly tents in Excel format.
 
    Submit the following prompt: **Create an excel file**
 
