@@ -9,13 +9,16 @@ There are two demos for demo 1 in this session. The preferred demo is the first,
 
 ### Resources
 
-First, watch the 5-minute [Contoso Sales Assistant built with Chainlit and the Azure OpenAI Assistants API](https://youtu.be/Q8pZ-YRUbF0?si=TI5-F09g7N142OB3) demo on YouTube video. This will give you a good overview of the demo.
+1. First, watch the 5-minute [Contoso Sales Assistant built with Chainlit and the Azure OpenAI Assistants API](https://youtu.be/Q8pZ-YRUbF0?si=TI5-F09g7N142OB3) demo on YouTube video. This will give you a good overview of the demo.
+2. The **contoso-tents-datasheet.pdf** file is located in the **datasheet** folder for **demo-1** of this repository.
 
 ### Background
 
 The app is built using the [Azure OpenAI Assistants API](https://learn.microsoft.com/azure/ai-services/openai/concepts/assistants) and [Chainlit](https://docs.chainlit.io/), with the backend powered by the Azure OpenAI Assistants API and app is written in Python. It demonstrates best practices for creating a conversational agent with this API. To enhance performance, the app is fully asynchronous, uses the FastAPI framework, and streams all responses to users in real-time.
 
 ### How the demo works
+
+The demo source code is available in the [Contoso Sales Assistant built with the Azure OpenAI Assistant API and Chainlit](https://github.com/gloveboxes/contoso-sales-azure-openai-assistant) repository.
 
 The core of the demo is a SQLite Sales Database, which stores Contoso’s sales data. When the application starts, it reads the database schema, product categories, product types, and reporting years, then incorporates this information into the instruction context for the Azure OpenAI Assistants API.
 
@@ -38,12 +41,11 @@ The app demonstrates the use of the 3 tools currently supported for the Assistan
 * [Code Interpreter](https://learn.microsoft.com/azure/ai-services/openai/how-to/code-interpreter)
 * [File Search](https://learn.microsoft.com/azure/ai-services/openai/how-to/file-search)
 
-### The demo
+### The demo Source Code
 
-1. Clone the [Contoso Sales Assistant built with the Azure OpenAI Assistant API and Chainlit](https://github.com/gloveboxes/contoso-sales-azure-openai-assistant) repository. You'll need the **contoso-tents-datasheet.pdf** file from the **docs** folder later in the demo.
-2. From your browser, navigate to the [Contoso Sales Assistant](https://aka.ms/contoso-sales-assistant) website.
-3. Login with your GitHub account to get a demo key.
-4. Follow the instructions for the event, copy your API Key and navigate API Assistant demo.
+1. From your browser, navigate to the [Contoso Sales Assistant](https://aka.ms/contoso-sales-assistant) website.
+2. Login with your GitHub account to get a demo key.
+3. Follow the instructions for the event, copy your API Key and navigate API Assistant demo.
 
 #### Set the UX to Light Mode
 
@@ -75,7 +77,7 @@ There are prompt starters in the chat window. The user can select these to start
 
 1. Next, we'll going to upload a Contoso Tents Datasheet to the Assistants API. This will allow the assistant to provide more detailed information about the tents. The Assistants API will vectorize the PDF and store the data in the database and the LLM will be able to access the data using hybrid (semantic and keyword) queries.
 
-   1. Drag and drop the **contoso-tents-datasheet.pdf** onto the Contoso Sales Assistant. The assistant will now have access to the tent data.
+   1. Drag and drop the **contoso-tents-datasheet.pdf** onto the Contoso Sales Assistant. The assistant will now have access to the tent data. The pdf is located in the **datasheet** folder for **demo-1** of this repository.
    1. Add the prompt **What beginner-friendly tents does Contoso sell?**
    1. Add resubmit the question.
 
