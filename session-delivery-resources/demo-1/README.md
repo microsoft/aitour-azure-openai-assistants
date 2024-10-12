@@ -16,9 +16,11 @@ There are two demos for demo 1 in this session. The preferred demo is the first,
 
 The app is built using the [Azure OpenAI Assistants API](https://learn.microsoft.com/azure/ai-services/openai/concepts/assistants) and [Chainlit](https://docs.chainlit.io/), with the backend powered by the Azure OpenAI Assistants API and app is written in Python. It demonstrates best practices for creating a conversational agent with this API. To enhance performance, the app is fully asynchronous, uses the FastAPI framework, and streams all responses to users in real-time.
 
-### How the demo works
+### The Contoso Sales Assistant Source Code
 
 The demo source code is available in the [Contoso Sales Assistant built with the Azure OpenAI Assistant API and Chainlit](https://github.com/gloveboxes/contoso-sales-azure-openai-assistant) repository.
+
+### How the demo works
 
 The core of the demo is a SQLite Sales Database, which stores Contoso’s sales data. When the application starts, it reads the database schema, product categories, product types, and reporting years, then incorporates this information into the instruction context for the Azure OpenAI Assistants API.
 
@@ -41,7 +43,7 @@ The app demonstrates the use of the 3 tools currently supported for the Assistan
 * [Code Interpreter](https://learn.microsoft.com/azure/ai-services/openai/how-to/code-interpreter)
 * [File Search](https://learn.microsoft.com/azure/ai-services/openai/how-to/file-search)
 
-### The demo Source Code
+### The demo script
 
 1. From your browser, navigate to the [Contoso Sales Assistant](https://aka.ms/contoso-sales-assistant) website.
 2. Login with your GitHub account to get a demo key.
