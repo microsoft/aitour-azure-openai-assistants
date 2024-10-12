@@ -46,9 +46,15 @@ The demo source code is available in the [Contoso Sales Assistant built with the
 
 ### How the demo works
 
-The core of the demo is a SQLite Sales Database, which stores Contoso’s sales data. When the application starts, it reads the database schema, product categories, product types, and reporting years, then incorporates this information into the instruction context for the Azure OpenAI Assistants API.
+The core of the demo is a SQLite Contoso Sales Database, it's 40000 rows of synthetic sales data. When the application starts, it reads the database schema, product categories, product types, and reporting years, then incorporates this information into the instruction context for the Azure OpenAI Assistants API.
 
 With this information, the Azure OpenAI Assistants API can answer questions about Contoso’s sales data, generate SQL queries, and execute them against the SQLite database using function calling. Additionally, the API can generate Python code to create visualizations, such as pie charts and tables, based on the data, and produce Excel files that users can download for further analysis.
+
+### Objections
+
+A common concern with the demo scenario is security, particularly the risk of SQL injection or an attacker attempting to drop the database. These concerns are valid, but they can be easily mitigated by making the database read-only. In the case of SQLite, this means setting the database to read-only mode. For a Database Service, you would assign the application a read-only (Select) role. Additionally, ensuring the application runs in a secure environment adds an extra layer of protection.
+
+In enterprise scenarios, data is typically extracted and transformed from transactional systems into a read-only database or data warehouse. This approach ensures the data is secure, optimized for performance, and that the application has read-only access to the data.
 
 ### The demo script
 
