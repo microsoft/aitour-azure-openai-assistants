@@ -56,7 +56,7 @@ A common concern with the demo scenario is security, particularly the risk of SQ
 
 In enterprise scenarios, data is typically extracted and transformed from transactional systems into a read-only database or data warehouse. This approach ensures the data is secure, optimized for performance, and that the application has read-only access to the data.
 
-### The demo script
+### The Demo Script
 
 1. From your browser, navigate to the [Contoso Sales Assistant](https://aka.ms/contoso-sales-assistant) website.
 2. Login with your GitHub account to get a demo key.
