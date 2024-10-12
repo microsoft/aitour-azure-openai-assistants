@@ -62,7 +62,7 @@ In enterprise scenarios, data is typically extracted and transformed from transa
 2. Login with your GitHub account to get a demo key.
 3. Follow the instructions for the event, copy your API Key and navigate API Assistant demo.
 
-#### Set the UX to Light Mode
+#### Set the Assistant UX to Light Mode
 
 Suggest setting light mode as generally better for an audience.
 
