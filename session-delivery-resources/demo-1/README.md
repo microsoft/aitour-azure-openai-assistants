@@ -88,7 +88,7 @@ There are prompt starters in the chat window. The user can select these to start
 
    The LLM will generate a SQL query, next the LLM will call the **ask_database** function to execute the query and return the results. The LLM will then generate the Python code to create the pie chart.
 
-6. Next, we'll ask about beginner-friendly tents. The sales database has limited knowledge of the products as the focus of the database is sales data, so the LLM will generate a response based on the data available.
+6. Next, we'll ask about beginner-friendly tents. The sales database has limited knowledge of the products as the focus of the database is sales data, so the LLM will generate a **limited** response based on the data available.
 
    **What beginner-friendly tents does Contoso sell?**
 
