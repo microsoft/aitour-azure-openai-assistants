@@ -79,7 +79,7 @@ Feel free to customize the script as needed; it serves as a guide rather than a 
 There are prompt starters in the chat window. The user can select these to start the conversation.
 
 1. Select **Help**.
-   This will provide a list of sample questions that the assistant can answer.
+   This will provide a list of sample questions that the assistant can answer. Remember, the assistant loaded the database schema, product categories, product types, and reporting years, so it has this context to work with when providing help.
 2. Select **Help in \<Your Preferred Language>**. (e.g., Help in Dutch, Help in French, etc.). This will provide a list of sample questions that the assistant can answer in the selected language.
 3. You can demo in your preferred language, but be sure to test the language support first.
 4. Select **Start new chart**.
