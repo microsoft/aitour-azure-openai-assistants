@@ -124,6 +124,8 @@ The Contoso Sales Assistant demo showcases how to leverage the Azure OpenAI Assi
 
 ## Contoso Sales Assistant built with Azure AI Studio Assistants API (Preview) Playground
 
+This is a backup demo should you decide not to use the Chainlit demo. The Azure AI Studio Assistants API (Preview) Playground is a powerful tool for data analysis and visualization.
+
 In this demo, we will utilize the Azure AI Studio Assistants API (Preview) Playground to analyze and visualize Contoso sales data. The dataset, stored in a CSV file that you will upload to the playground, consists of sales revenue details segmented by region, category, product type, year, and month. The goal is to demonstrate how to leverage the AI Studio Assistants Playground and the Assistants API Code Interpreter for data analysis and visualization.
 
 ## Prerequisites
