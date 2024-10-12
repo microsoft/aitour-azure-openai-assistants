@@ -1,15 +1,108 @@
 # Explore Contoso Retail Data
 
+There are two demos for demo 1 in this session. The preferred demo is the first, but you own the session, so choose the demo that best fits your audience and your style.
+
+1. [Contoso Sales Assistant built with Chainlit and the Azure OpenAI Assistants API](#contoso-sales-assistant-built-with-chainlit-and-the-azure-openai-assistants-api) (Preferred demo).
+2. [Contoso Sales Assistant built with Azure AI Studio Assistants API (Preview) Playground](#contoso-sales-assistant-built-with-azure-ai-studio-assistants-api-preview-playground).
+
+## Contoso Sales Assistant built with Chainlit and the Azure OpenAI Assistants API
+
+### Resources
+
+First, watch the 5-minute [Contoso Sales Assistant built with Chainlit and the Azure OpenAI Assistants API](https://youtu.be/Q8pZ-YRUbF0?si=TI5-F09g7N142OB3) demo on YouTube video. This will give you a good overview of the demo.
+
+### Background
+
+The app is built using the [Azure OpenAI Assistants API](https://learn.microsoft.com/azure/ai-services/openai/concepts/assistants) and [Chainlit](https://docs.chainlit.io/), with the backend powered by the Azure OpenAI Assistants API and app is written in Python. It demonstrates best practices for creating a conversational agent with this API. To enhance performance, the app is fully asynchronous, uses the FastAPI framework, and streams all responses to users in real-time.
+
+### How the demo works
+
+The core of the demo is a SQLite Sales Database, which stores Contoso’s sales data. When the application starts, it reads the database schema, product categories, product types, and reporting years, then incorporates this information into the instruction context for the Azure OpenAI Assistants API.
+
+With this information, the Azure OpenAI Assistants API can answer questions about Contoso’s sales data, generate SQL queries, and execute them against the SQLite database using function calling. Additionally, the API can generate Python code to create visualizations, such as pie charts and tables, based on the data, and produce Excel files that users can download for further analysis.
+
+### Why use the Azure OpenAI Assistants API?
+
+The Azure OpenAI Assistants API makes it easier to build generative AI apps by simplifying key tasks:
+
+1. Streamlined Development: It abstracts the complexities of integrating AI, allowing developers to focus on building features rather than managing the AI model.
+2. Context Management: The API automatically handles conversation context, ensuring the AI provides relevant, coherent responses throughout interactions.
+3. Scalability: It scales effortlessly, managing workloads and resources automatically to handle both small and large user bases.
+4. Context Execution: The API lets you define and run context against an LLM, making it easier to perform tasks like data queries or code generation based on specific instructions.
+
+Overall, the Azure OpenAI Assistants API simplifies generative AI development, managing context, scaling, and execution efficiently.
+
+The app demonstrates the use of the 3 tools currently supported for the Assistance API
+
+* [Function calling](https://learn.microsoft.com/azure/ai-services/openai/how-to/assistant-functions)
+* [Code Interpreter](https://learn.microsoft.com/azure/ai-services/openai/how-to/code-interpreter)
+* [File Search](https://learn.microsoft.com/azure/ai-services/openai/how-to/file-search)
+
+### The demo
+
+1. Clone the [Contoso Sales Assistant built with the Azure OpenAI Assistant API and Chainlit](https://github.com/gloveboxes/contoso-sales-azure-openai-assistant) repository. You'll need the **contoso-tents-datasheet.pdf** file from the **docs** folder later in the demo.
+2. From your browser, navigate to the [Contoso Sales Assistant](https://aka.ms/contoso-sales-assistant) website.
+3. Login with your GitHub account to get a demo key.
+4. Follow the instructions for the event, copy your API Key and navigate API Assistant demo.
+
+#### Set the UX to Light Mode
+
+Suggest setting light mode as generally better for an audience.
+
+1. From the top right, select user icon
+1. Select Light Mode
+1. Start with chat history closed
+
+#### Start the conversation
+
+This is the demo script used in the video, but keep in mind that the application is powered by a large language model (LLM), so conversations will vary, so practice and be ready to adapt depending on the responses.
+
+There are prompt starters in the chat window. The user can select these to start the conversation.
+
+1. Select **Help**.
+   This will provide a list of sample questions that the assistant can answer.
+1. Select **Help in \<Your Preferred Language>**. (e.g., Help in Dutch, Help in French, etc.). This will provide a list of sample questions that the assistant can answer in the selected language.
+1. You can demo in your preferred language, but be sure to test the language support first.
+1. Select **Start new chart**.
+1. Select the 2nd from left starter.
+   * Create a vivid pie chart of sales by region.
+
+   The LLM will generate a SQL query, next the LLM will call the **ask_database** function to execute the query and return the results. The LLM will then generate the Python code to create the pie chart.
+
+1. Next, we'll ask about beginner-friendly tents. The sales database has limited knowledge of the products as the focus of the database is sales data, so the LLM will generate a response based on the data available.
+
+   **What beginner-friendly tents does Contoso sell?**
+
+1. Next, we'll going to upload a Contoso Tents Datasheet to the Assistants API. This will allow the assistant to provide more detailed information about the tents. The Assistants API will vectorize the PDF and store the data in the database and the LLM will be able to access the data using hybrid (semantic and keyword) queries.
+
+   1. Drag and drop the **contoso-tents-datasheet.pdf** onto the Contoso Sales Assistant. The assistant will now have access to the tent data.
+   1. Add the prompt **What beginner-friendly tents does Contoso sell?**
+   1. Add resubmit the question.
+
+   Now the assistant has access to the tent data and can provide more detailed information.
+
+1. Now, we're going to combine the data from the sales database and the tent datasheet to provide a more detailed analysis.
+
+   Submit the following prompt: **Show sales of tents by region and include a brief description in the table about each tent.**
+
+1. Finally, let's use the Assistants API and the code interpreter to generate a report on the sales of beginner-friendly tents in Excel format.
+
+   Submit the following prompt: **Create an excel file**
+
+   The LLM will generate the Python code to create the Excel file. You can download the file by selecting the download link and open in Excel.
+
+## Contoso Sales Assistant built with Azure AI Studio Assistants API (Preview) Playground
+
 In this demo, we will utilize the Azure AI Studio Assistants API (Preview) Playground to analyze and visualize Contoso sales data. The dataset, stored in a CSV file that you will upload to the playground, consists of sales revenue details segmented by region, category, product type, year, and month. The goal is to demonstrate how to leverage the AI Studio Assistants Playground and the Assistants API Code Interpreter for data analysis and visualization.
 
 ## Prerequisites
 
 To successfully follow this demo, you will need the following resources:
 
-- An Azure subscription
-- Access to the Azure AI Studio Assistants API (Preview) Playground
-- A local clone of this [Introduction to Azure Open AI Assistants](https://github.com/microsoft/aitour-azure-openai-assistants) repo on your computer as you will need to upload the **demo-1/data/Contoso-Sales-Data.csv** file to the Azure OpenAI Assistants Playground.
-- An OpenAI model deployment; as of August 2024, it is recommended to use GPT-4o
+* An Azure subscription
+* Access to the Azure AI Studio Assistants API (Preview) Playground
+* A local clone of this [Introduction to Azure Open AI Assistants](https://github.com/microsoft/aitour-azure-openai-assistants) repo on your computer as you will need to upload the **demo-1/data/Contoso-Sales-Data.csv** file to the Azure OpenAI Assistants Playground.
+* An OpenAI model deployment; as of August 2024, it is recommended to use GPT-4o
 
 ## How to Create a New Assistant
 
@@ -89,7 +182,7 @@ Below is an example conversation flow. Note that the actual interaction may vary
    help
    ```
 
-   - Help uses the assistant instructions to establish the context of the conversation and provides a list of sample questions that the assistant can answer.
+   * Help uses the assistant instructions to establish the context of the conversation and provides a list of sample questions that the assistant can answer.
 
    ![example help](media/help.png)
 
@@ -99,7 +192,7 @@ Below is an example conversation flow. Note that the actual interaction may vary
    what it the total revenue and net revenue by region, display as a table
    ```
 
-   - This includes the regions available in the CSV data into the context of the conversation.
+   * This includes the regions available in the CSV data into the context of the conversation.
 
    ![This includes the regions available in the CSV data into the context of the conversation](media/total-sales-by-region-as-table.png)
 
@@ -109,7 +202,7 @@ Below is an example conversation flow. Note that the actual interaction may vary
    what are the total sales for Asia broken down by category, display as a bar chart using vivid colors
    ```
 
-    - Notes
+    * Notes
         1. I'm asking for sales data for **Asia**, the data is for **ASIA-PACIFIC**, but the LLM figures it out.
         1. Hover over the code to the right of **code_interpreter** to see the generated Python code.
 
@@ -161,7 +254,7 @@ Below is an example conversation flow. Note that the actual interaction may vary
    I want to download an excel doc for sales of skiing related equipment by region
    ```
 
-    - I think we have a problem with the business, sales of skiing related equipment are down in the middle east. Maybe it's a lack of snow. I need to download the data to analyze it further.
+    * I think we have a problem with the business, sales of skiing related equipment are down in the middle east. Maybe it's a lack of snow. I need to download the data to analyze it further.
 
    ![I want to download an excel doc for sales of skiing related equipment by region](media/download-excel.png)
 
@@ -175,14 +268,14 @@ Throughout the demo, we learned how to utilize the Azure AI Studio Assistants AP
 
 2. **Creating a New Assistant**:
 
-   - Navigate to Azure AI Studio and create a new assistant.
-   - Select the Deployment option and choose GPT-4o.
-   - Name the assistant "Contoso Sales Assistant."
-   - Input a specific prompt to define the assistant's role.
-   - Enable the Code Interpreter tool and upload the Contoso sales data CSV file.
+   * Navigate to Azure AI Studio and create a new assistant.
+   * Select the Deployment option and choose GPT-4o.
+   * Name the assistant "Contoso Sales Assistant."
+   * Input a specific prompt to define the assistant's role.
+   * Enable the Code Interpreter tool and upload the Contoso sales data CSV file.
 
 3. **Loading an Existing Assistant**:
-   - You can also load pre-existing assistants from the Assistants menu in Azure AI Studio.
+   * You can also load pre-existing assistants from the Assistants menu in Azure AI Studio.
 
 ### Interactive Data Analysis and Visualization
 
