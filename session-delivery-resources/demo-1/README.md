@@ -3,7 +3,7 @@
 There are two demos for demo 1 in this session. The preferred demo is the first, but you own the session, so choose the demo that best your style.
 
 1. [Contoso Sales Assistant built with Chainlit and the Azure OpenAI Assistants API](#contoso-sales-assistant-built-with-chainlit-and-the-azure-openai-assistants-api) (Preferred demo).
-2. [Contoso Sales Assistant built with Azure AI Studio Assistants API (Preview) Playground](#contoso-sales-assistant-built-with-azure-ai-studio-assistants-api-preview-playground).
+2. [Contoso Sales Assistant built with Azure AI Studio Assistants API (Preview) Playground](#contoso-sales-assistant-built-with-azure-ai-studio-assistants-api-preview-playground) (Backup demo).
 
 ## Why use the Azure OpenAI Assistants API?
 
