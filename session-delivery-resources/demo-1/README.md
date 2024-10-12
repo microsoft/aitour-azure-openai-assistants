@@ -9,8 +9,15 @@ There are two demos for demo 1 in this session. The preferred demo is the first,
 
 ### Resources
 
-1. First, watch the 5-minute [Contoso Sales Assistant built with Chainlit and the Azure OpenAI Assistants API](https://youtu.be/Q8pZ-YRUbF0?si=TI5-F09g7N142OB3) demo on YouTube video. This will give you a good overview of the demo.
-2. The **contoso-tents-datasheet.pdf** file used in the demo is located in the **datasheet** folder for **demo-1** of this repository.
+#### YouTube Video
+
+First, watch the 5-minute demo on YouTube video. This will give you a good overview of the demo.
+
+[![Contoso Sales Assistant built with Chainlit and the Azure OpenAI Assistants API](https://github.com/microsoft/aitour-azure-openai-assistants/blob/main/session-delivery-resources/demo-1/media/youtube-banner.png?raw=true)](https://youtu.be/Q8pZ-YRUbF0?si=TI5-F09g7N142OB3)
+
+#### Contoso Tents Datasheet
+
+The **contoso-tents-datasheet.pdf** file used in the demo is located in the **datasheet** folder for **demo-1** of this repository.
 
 ### Background
 
