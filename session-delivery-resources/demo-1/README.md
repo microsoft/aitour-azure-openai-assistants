@@ -5,6 +5,23 @@ There are two demos for demo 1 in this session. The preferred demo is the first,
 1. [Contoso Sales Assistant built with Chainlit and the Azure OpenAI Assistants API](#contoso-sales-assistant-built-with-chainlit-and-the-azure-openai-assistants-api) (Preferred demo).
 2. [Contoso Sales Assistant built with Azure AI Studio Assistants API (Preview) Playground](#contoso-sales-assistant-built-with-azure-ai-studio-assistants-api-preview-playground).
 
+## Why use the Azure OpenAI Assistants API?
+
+The Azure OpenAI Assistants API makes it easier to build generative AI apps by simplifying key tasks:
+
+1. Streamlined Development: It abstracts the complexities of integrating AI, allowing developers to focus on building features rather than managing the AI model.
+2. Context Management: The API automatically handles conversation context, ensuring the AI provides relevant, coherent responses throughout interactions.
+3. Scalability: It scales effortlessly, managing workloads and resources automatically to handle both small and large user bases.
+4. Context Execution: The API lets you define and run context against an LLM, making it easier to perform tasks like data queries or code generation based on specific instructions.
+
+Overall, the Azure OpenAI Assistants API simplifies generative AI development, managing context, scaling, and execution efficiently.
+
+The app demonstrates the use of the 3 tools currently supported for the Assistance API
+
+* [Function calling](https://learn.microsoft.com/azure/ai-services/openai/how-to/assistant-functions)
+* [Code Interpreter](https://learn.microsoft.com/azure/ai-services/openai/how-to/code-interpreter)
+* [File Search](https://learn.microsoft.com/azure/ai-services/openai/how-to/file-search)
+
 ## Contoso Sales Assistant built with Chainlit and the Azure OpenAI Assistants API
 
 ### Resources
@@ -32,23 +49,6 @@ The demo source code is available in the [Contoso Sales Assistant built with the
 The core of the demo is a SQLite Sales Database, which stores Contoso’s sales data. When the application starts, it reads the database schema, product categories, product types, and reporting years, then incorporates this information into the instruction context for the Azure OpenAI Assistants API.
 
 With this information, the Azure OpenAI Assistants API can answer questions about Contoso’s sales data, generate SQL queries, and execute them against the SQLite database using function calling. Additionally, the API can generate Python code to create visualizations, such as pie charts and tables, based on the data, and produce Excel files that users can download for further analysis.
-
-### Why use the Azure OpenAI Assistants API?
-
-The Azure OpenAI Assistants API makes it easier to build generative AI apps by simplifying key tasks:
-
-1. Streamlined Development: It abstracts the complexities of integrating AI, allowing developers to focus on building features rather than managing the AI model.
-2. Context Management: The API automatically handles conversation context, ensuring the AI provides relevant, coherent responses throughout interactions.
-3. Scalability: It scales effortlessly, managing workloads and resources automatically to handle both small and large user bases.
-4. Context Execution: The API lets you define and run context against an LLM, making it easier to perform tasks like data queries or code generation based on specific instructions.
-
-Overall, the Azure OpenAI Assistants API simplifies generative AI development, managing context, scaling, and execution efficiently.
-
-The app demonstrates the use of the 3 tools currently supported for the Assistance API
-
-* [Function calling](https://learn.microsoft.com/azure/ai-services/openai/how-to/assistant-functions)
-* [Code Interpreter](https://learn.microsoft.com/azure/ai-services/openai/how-to/code-interpreter)
-* [File Search](https://learn.microsoft.com/azure/ai-services/openai/how-to/file-search)
 
 ### The demo script
 
