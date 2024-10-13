@@ -50,9 +50,11 @@ The demo source code is available in the [Contoso Sales Assistant built with the
 
 ### How the demo works
 
-The core of the demo is a SQLite Contoso Sales Database, it's 40000 rows of synthetic sales data. When the application starts, it reads the database schema, product categories, product types, and reporting years, then incorporates this information into the instruction context for the Azure OpenAI Assistants API.
+The demo uses a SQLite Contoso Sales Database with 40,000 rows of synthetic data. When the app starts, it reads the schema, product categories, product types, and reporting years, then adds this info to the Azure OpenAI Assistants API instruction context.
 
-With this setup, the Azure OpenAI GPT-4o LLM and Azure OpenAI Assistants API can answer questions about Contoso's sales data, generate SQL queries, and execute them against the read-only SQLite database using function calling. Additionally, the API, along with the LLM and Code Interpreter, can run Python code to create visualizations like pie charts and tables, and generate Excel files for users to download for further analysis.
+With this setup, the Azure OpenAI GPT-4 LLM and Assistants API can answer questions about Contoso’s sales data, generate SQL queries, and run them on the read-only SQLite database using function calls. The LLM and Code Interpreter can also run Python code to create visualizations, such as pie charts and tables, and generate Excel files for users to download for further analysis.
+
+_This solution can be easily adapted to support other scenarios, such as customer support, simply by changing the database and adjusting the Azure OpenAI Assistants API instructions to fit the new use case._
 
 ### Objections
 
