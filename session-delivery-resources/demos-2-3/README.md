@@ -29,22 +29,30 @@ These demos were tested with Azure OpenAI GPT-4o model. For best results use the
 
 ### Demo 2
 
+The objective is to learn about Azure OpenAI Function Calling using the Azure OpenAI API. There are copious notes in the Jupyter Notebook to help you understand the code.
+
 1. Set up the .env file with the Azure OpenAI key, endpoint, and deployment.
 1. Run the **[Introduction to Azure OpenAI Function Calling](demo-2-function-calling.ipynb)** Jupyter Notebook. Note, you'll be prompted to select a kernel source. Select the Python Environments, then select the **Recommended** Python environment.
 
 ### Demo 3
 
+The objective is to learn about Azure OpenAI Assistants using the Azure OpenAI API. There are copious notes in the Jupyter Notebook to help you understand the code.
+
 1. Run the Jupyter Notebook **demo-3-contoso-sales-analysis.ipynb**.
 1. Set up the .env file with the Azure OpenAI key, endpoint, and deployment.
 1. Run the **[Contoso Sales Analysis Assistant](demo-3-contoso-sales-analysis.ipynb)** Jupyter Notebook. Note, you'll be prompted to select a kernel source. Select the Python Environments, then select the **Recommended** Python environment.
 
+## Running the Demos
+
+You can run the demos in a Codespace or locally in a dev container or a Python virtual environment. It's recommended to run the demos in a Codespace, but choose the option that works best for you.
+
 ### Codespaces
 
-Open the repo [Introduction to Azure Open AI Assistants](https://github.com/microsoft/aitour-azure-openai-assistants) in a Codespace and run the demos in the Jupyter Notebooks.
+Open the repo [Introduction to Azure Open AI Assistants](https://github.com/microsoft/aitour-azure-openai-assistants) in a Codespace and run the demos in the Jupyter Notebooks in your browser.
 
 ### Local installation
 
-### Dev Containers
+#### Install with Dev Containers
 
 The demos can be run in a Dev Container in Visual Studio Code.
 
@@ -53,11 +61,11 @@ The demos can be run in a Dev Container in Visual Studio Code.
 1. Install Docker
 1. Open the repo in Visual Studio Code and click the "Reopen in Container" button
 
-### Python Virtual Environment
+#### Install on the Local Machine
 
 Create a Python Virtual Environment
 
-### Windows
+##### Windows
 
 1. Create a new Python virtual environment by running the following command in your terminal:
 
@@ -71,7 +79,7 @@ Create a Python Virtual Environment
     .venv\Scripts\activate
     ```
 
-### macOS and Linux
+##### macOS and Linux
 
 1. Create a new Python virtual environment by running the following command in your terminal:
 
@@ -85,13 +93,13 @@ Create a Python Virtual Environment
     source .venv/bin/activate
     ```
 
-### Update pip
+##### Update pip
 
 ```bash
 pip install --upgrade pip
 ```
 
-### Pip install required libraries
+##### Pip install required libraries
 
 ```bash
 pip install -r requirements.txt
