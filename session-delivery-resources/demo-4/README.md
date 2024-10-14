@@ -1,6 +1,6 @@
 # Agent Demo in the Assistants API Session
 
-This demo is option depending on the time available in the session. It is a more advanced demo that shows how to create an agent app that uses the Assistants API to simulate a conversation between two personas.
+This demo is optional depending on the time available in the session. It is a more advanced demo that shows how to create an agent app that uses the Assistants API to simulate a conversation between two personas.
 
 The demo uses the [Azure AI CLI](https://github.com/Azure/azure-ai-cli), an open source project to kickstart the development of AI applications using Azure AI services.
 
