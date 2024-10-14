@@ -4,22 +4,28 @@ This demo is optional depending on the time available in the session. It is a mo
 
 The demo uses the [Azure AI CLI](https://github.com/Azure/azure-ai-cli), an open source project to kickstart the development of AI applications using Azure AI services.
 
-## Video introduction
+Before the session, be sure to complete the [prerequisites](#prerequisites).
+
+## Prerequisites
+
+### Video introduction
 
 Click the image below to watch a video introduction to the Agent App in the Assistants API session.
 
 [![Video introduction](media/thumbnail.png)](https://youtu.be/dGT7cThhnSY)
 
-## Create Azure OpenAI Resources
+### Create Azure OpenAI Resources
 
 1. Create an Azure OpenAI GPT-4o model and a text-embedding-3-small model in the Azure portal.
 
-## Start the Azure AI CLI
+### Start the Azure AI CLI
 
 1. Navigate to the [Azure AI CLI](https://github.com/Azure/azure-ai-cli) repo
 2. Open in Codespaces
 
-## Initialize resource connections and configuration w/ ai init
+## Main Demo Steps
+
+### Initialize resource connections
 
 1. Open a new terminal in VS Code in the Codespace.
 2. Run the following command to initialize the Azure AI CLI:
@@ -30,7 +36,7 @@ Click the image below to watch a video introduction to the Agent App in the Assi
 
 ![](media/ai-cli-init.png)
 
-## Create the Agent App
+### Create the Agent App
 
 1. Create the agent app with the following command:
 
@@ -52,7 +58,7 @@ Click the image below to watch a video introduction to the Agent App in the Assi
 
 4. You'll be prompted to install the C# Dev Kit Extension. Click "Install".
 
-## Explain the Agent App Personas
+### Explain the Agent App Personas
 
 **Demo Tip: Set the VS Code terminal font size to a larger size for better visibility.**
 
@@ -110,7 +116,7 @@ History:
 {{$history}}
 ```
 
-## Run the Agent
+### Run the Agent
 
 From the VS Code terminal, run the following command:
 
