@@ -55,7 +55,7 @@ Click the image below to watch a video introduction to the Agent App in the Assi
     cd sk-chat-with-agents
     ```
 
-3. Start CS Code
+3. Open in VS Code
 
     ```shell
     code .
