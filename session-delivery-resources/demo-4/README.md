@@ -6,6 +6,13 @@ The demo uses the [Azure AI CLI](https://github.com/Azure/azure-ai-cli), an open
 
 Before the session, be sure to complete the [prerequisites](#prerequisites).
 
+1. Watch the video introduction to the Agent App in the Assistants API session.
+2. Create Azure OpenAI resources.
+3. Start the Azure AI CLI.
+4. Initialize resource connections.
+5. Create the Agent App.
+6. Open in VS Code.
+
 ## Prerequisites
 
 ### Video introduction
@@ -22,8 +29,6 @@ Click the image below to watch a video introduction to the Agent App in the Assi
 
 1. Navigate to the [Azure AI CLI](https://github.com/Azure/azure-ai-cli) repo
 2. Open in Codespaces
-
-## Main Demo Steps
 
 ### Initialize resource connections
 
@@ -56,7 +61,9 @@ Click the image below to watch a video introduction to the Agent App in the Assi
     code .
     ```
 
-4. You'll be prompted to install the C# Dev Kit Extension. Click "Install".
+## Main Demo Steps
+
+1. You'll be prompted to install the C# Dev Kit Extension. Click "Install".
 
 ### Explain the Agent App Personas
 
