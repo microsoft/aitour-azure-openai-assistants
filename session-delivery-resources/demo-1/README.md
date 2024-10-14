@@ -5,14 +5,6 @@ There are two demos for demo 1 in this session. The preferred demo is the first,
 1. [Contoso Sales Assistant built with Chainlit and the Azure OpenAI Assistants API](#contoso-sales-assistant-built-with-chainlit-and-the-azure-openai-assistants-api) (Preferred demo).
 2. [Contoso Sales Assistant built with Azure AI Studio Assistants API (Preview) Playground](#contoso-sales-assistant-built-with-azure-ai-studio-assistants-api-preview-playground) (Backup demo).
 
-## Why use the Azure OpenAI Assistants API?
-
-The Azure OpenAI Assistants API makes it easier to build generative AI apps by simplifying key tasks:
-
-1. Streamlined Development: It abstracts the complexities of integrating AI, allowing developers to focus on building features rather than managing the AI model.
-2. Context Management: The API automatically handles conversation context, ensuring the AI provides relevant, coherent responses throughout interactions.
-3. Scalability: It scales effortlessly, managing workloads and resources automatically to handle both small and large user bases.
-4. Context Execution: The API lets you define and run context against an LLM, making it easier to perform tasks like data queries or code generation based on specific instructions.
 
 ## Contoso Sales Assistant built with Chainlit and the Azure OpenAI Assistants API
 
@@ -22,9 +14,20 @@ The Azure OpenAI Assistants API makes it easier to build generative AI apps by s
 
 This is a **backup demo** should you decide not to use the Chainlit demo. The Azure AI Studio Assistants API (Preview) Playground is a powerful tool for data analysis and visualization.
 
+### Why use the Azure OpenAI Assistants API?
+
+The Azure OpenAI Assistants API makes it easier to build generative AI apps by simplifying key tasks:
+
+1. Streamlined Development: It abstracts the complexities of integrating AI, allowing developers to focus on building features rather than managing the AI model.
+2. Context Management: The API automatically handles conversation context, ensuring the AI provides relevant, coherent responses throughout interactions.
+3. Scalability: It scales effortlessly, managing workloads and resources automatically to handle both small and large user bases.
+4. Context Execution: The API lets you define and run context against an LLM, making it easier to perform tasks like data queries or code generation based on specific instructions.
+
+### Introduction
+
 In this demo, we will utilize the Azure AI Studio Assistants API (Preview) Playground to analyze and visualize Contoso sales data. The dataset, stored in a CSV file that you will upload to the playground, consists of sales revenue details segmented by region, category, product type, year, and month. The goal is to demonstrate how to leverage the AI Studio Assistants Playground and the Assistants API Code Interpreter for data analysis and visualization.
 
-## Prerequisites
+### Prerequisites
 
 To successfully follow this demo, you will need the following resources:
 
@@ -33,7 +36,7 @@ To successfully follow this demo, you will need the following resources:
 * A local clone of this [Introduction to Azure Open AI Assistants](https://github.com/microsoft/aitour-azure-openai-assistants) repo on your computer as you will need to upload the **demo-1/data/Contoso-Sales-Data.csv** file to the Azure OpenAI Assistants Playground.
 * An OpenAI model deployment; as of August 2024, it is recommended to use GPT-4o
 
-## How to Create a New Assistant
+### How to Create a New Assistant
 
 The following steps will guide you through the process of creating an assistant in the Azure AI Studio Assistants API (Preview) Playground and uploading the Contoso Retail data CSV file. The areas highlighted in red are the key areas to focus on when setting up the assistant.
 
@@ -79,14 +82,14 @@ The following steps will guide you through the process of creating an assistant 
 1. Select **Tools** and enable **Code Interpreter**.
 1. Select **+Add files** for the **Code Interpreter** and upload the **Contoso-Sales-Data.csv** file from the data folder.
 
-## How to Load an Existing Assistant
+### How to Load an Existing Assistant
 
 1. Open your browser and navigate to [Azure AI Studio](https://ai.azure.com).
 2. From the left menu, select **Assistants**.
 3. Click on the **Load Assistant** button.
 4. Choose the **Contoso Sales Assistant** from the list.
 
-## Introduction to the Demo
+### Introduction to the Demo
 
 This demo showcases how to use the AI Studio Assistants Playground for data analysis and visualization with the Assistants API Code Interpreter. In this session, the user guides the conversation, and the assistant generates answers and visualizations. The model interprets user queries and dynamically generates code, which the Code Interpreter executes. Results are displayed in the chat window.
 
@@ -94,15 +97,15 @@ Previously, users had to manually code for data analysis and visualization. The 
 
 The playground offers two tools: Code Interpreter and File Search. File Search supports file uploads and both keyword and semantic searches for RAG-style interactions. This demo focuses on the Code Interpreter, designed to write and execute code for data analysis and visualization.
 
-## Why is the Code Interpreter so interesting?
+### Why is the Code Interpreter so interesting?
 
 Large Language Models (LLMs) excel at interpreting and generating natural language text. Although LLMs may not be inherently strong in performing mathematical operations, they are highly effective at writing code to handle complex calculations, generate charts, create visualizations, and more. The Code Interpreter feature allows LLMs to dynamically generate and execute code in real-time, enabling them to answer queries and perform a wide range of computational tasks efficiently.
 
-## Start the conversation
+### Start the conversation
 
 Below is an example conversation flow. Note that the actual interaction may vary due to the inherent behavior of the AI model:
 
-## Sample Conversation Flow
+### Sample Conversation Flow
 
 1. Clear any existing chat history.
 1. Ask for help by typing:
@@ -187,7 +190,7 @@ Below is an example conversation flow. Note that the actual interaction may vary
 
    ![I want to download an excel doc for sales of skiing related equipment by region](media/download-excel.png)
 
-## What We Learned
+### What We Learned
 
 Throughout the demo, we learned how to utilize the Azure AI Studio Assistants API (Preview) Playground to analyze and visualize Contoso sales data stored in a CSV file. Below are some key takeaways:
 
