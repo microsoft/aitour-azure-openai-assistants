@@ -10,7 +10,7 @@ There are two demos for demo 1 in this session. The preferred demo is the first,
 
 **This is the preferred demo for demo 1**
 
-1. **The applications is deployed to Azure**, follow the instructions in the [Contoso Sales AI Assistant Docs](https://gloveboxes.github.io/contoso-sales-azure-openai-assistant/) to interact with the assistant. You'll find complete information about the application, a recorded video, and a demo script.
+1. **The applications is deployed to Azure**, follow the instructions in the [Contoso Sales AI Assistant Docs](https://azure-samples.github.io/contoso-sales-azure-openai-assistants-api/) to interact with the assistant. You'll find complete information about the application, a recorded video, and a demo script.
 2. There is a **silent demo recording that you can use as a demo backup**. Atm, this is not in the PowerPoint deck, but you can find it in the [resources folder](https://github.com/microsoft/aitour-azure-openai-assistants/tree/main/session-delivery-resources/demo-1/resources) for this repo.
 
 ## Contoso Sales Assistant built with Azure AI Studio Assistants API (Preview) Playground

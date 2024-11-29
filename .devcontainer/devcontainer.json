@@ -7,6 +7,9 @@
         "context": ".."
     },
     "features": {
+        "ghcr.io/devcontainers/features/azure-cli:1": {
+            "extensions": "ml"
+        }
     },
     "customizations": {
         "vscode": {
