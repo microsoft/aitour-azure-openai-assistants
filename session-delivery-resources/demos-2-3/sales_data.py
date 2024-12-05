@@ -127,3 +127,20 @@ class SalesData:
         except sqlite3.Error as e:
             # pass the error back to the model so it can reevaluate the query
             return json.dumps({"fetch_sales_data_using_sqlite_query error": str(e), "query": query})
+        
+    def fetch_sales_data_using_sqlite_query_pandas(self, query: str) -> pd.DataFrame:
+        """
+        Execute an SQL query and return results in display and JSON formats.
+        :param query: The dynamic SQL query to execute
+        :rtype: pd.DataFrame
+        """
+
+        if self.conn is None:
+            raise ConnectionError(
+                "Database connection is not established. Call connect() first.")
+
+        try:
+            return pd.read_sql_query(query, self.conn)
+        except sqlite3.Error as e:
+            # pass the error back to the model so it can reevaluate the query
+            return json.dumps({"fetch_sales_data_using_sqlite_query_pandas error": str(e), "query": query})
