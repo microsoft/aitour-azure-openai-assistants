@@ -17,7 +17,7 @@ code.
 |-------------------|----------------------------------|-------------------|
 | PowerPoint        | - [Presentation](https://aka.ms/AArxlty) | Slides, [Additional Languages](https://github.com/microsoft/aitour-azure-openai-assistants/blob/main/session-delivery-resources/README.md#slides-in-additional-languages) |
 | PPT Recording    | - [Presentation](https://aka.ms/AArxlty) | Embedded into the PowerPoint |
-| Videos            | - [Build sophisticated custom copilots with Azure OpenAI Assistants](https://build.microsoft.com/en-US/sessions/2ac412b4-3e6a-4107-8c62-910e18cbe94c) | Build 2024 |
+| Videos            | - [Build sophisticated custom copilots with Azure AI Agent Service apps](https://build.microsoft.com/en-US/sessions/2ac412b4-3e6a-4107-8c62-910e18cbe94c) | Build 2024 |
 | Videos            | - [OpenAI Assistants API – Course for Beginners](https://www.youtube.com/watch?v=qHPonmSX4Ms&t=10648s) | YouTube freeCodeCamp.org |
 | Demo 1            | - [Introduction to the Azure OpenAI Assistants Playground](demo-1/README.md) | Silent recording embedded in the slides  |
 | Demo 2            | - [Introduction to Azure OpenAI Chat Completion Function Calling](demos-2-3/demo-2-function-calling.ipynb) | Silent recording embedded in the slides  |

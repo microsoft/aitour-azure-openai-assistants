@@ -1,29 +1,30 @@
-# Introduction to Azure Open AI Assistants
+# Introduction to Azure AI Agent Service
+
 [![Azure AI Community Discord](
 https://dcbadge.vercel.app/api/server/ByRwuEEgH4)](https://discord.com/invite/ByRwuEEgH4?WT.mc_id=aiml-00001-leestott)
 
 ## Session Description
 
-The OpenAI Assistants API allows you to build conversational agents that can understand and respond to user inputs. You can use the API to automate tasks, provide information, or guide users through a process.
+The Azure AI Agent Service allows you to build conversational agents that can understand and respond to user inputs. You can use the API to automate tasks, provide information, or guide users through a process.
 
-The Assistants API is not the only way to build conversational agents, but it offers several advantages:
+The Azure AI Agent Service is not the only way to build conversational agents, but it offers several advantages:
 
 1. **Simplicity**: The API abstracts away the complexity of building a conversational agent, allowing you to focus on the content and logic of the conversation.
 2. **Scalability**: The API is designed to handle a large number of concurrent users, making it suitable for production use.
-3. **Customization**: The API allows you to customize the behavior of the assistant by providing training data and defining conversational flows.
-4. **Integration**: The API can be integrated with other services and systems, allowing you to build assistants that interact with external data sources.
+3. **Customization**: The API allows you to customize the behavior of the agent by providing training data and defining conversational flows.
+4. **Integration**: The API can be integrated with other services and systems, allowing you to build agents that interact with external data sources.
 
 ## Learning Outcomes
 
-1. Understand the OpenAI Assistants API
-1. Introductions to the Azure OpenAI Assistants Playground
+1. Understand the Azure AI Agent Service
+<!-- 1. Introductions to the Azure AI Agent Service Playground -->
 1. Understand Azure OpenAI Chat Completion Function Calling
 1. Learn how to build conversational agents
 
 ## Technology Used
 
-1. Azure OpenAI Assistants API
-1. Azure OpenAI Assistants Playground
+1. Azure AI Agent Service
+<!-- 2. Azure AI Agent Service Playground -->
 1. Jupyter Notebooks
 1. OpenAI SDK
 
@@ -31,7 +32,8 @@ The Assistants API is not the only way to build conversational agents, but it of
 
 | Resources          | Links                             | Description        |
 |:-------------------|:----------------------------------|:-------------------|
-| Future Learning 1  | [Getting started with Azure OpenAI Assistants](https://learn.microsoft.com/azure/ai-services/openai/how-to/assistant) | Learn more about Assistants|
+| Future Learning 1  | [Getting started with Azure AI Agent Service](https://techcommunity.microsoft.com/blog/azure-ai-services-blog/introducing-azure-ai-agent-service/4298357) | Learn more about the Azure AI AI Agent Service|
+| Future Learning 2  | [Azure AI Agent Service API Documentation](https://learn.microsoft.com/en-us/python/api/overview/azure/ai-projects-readme) | Learn more about Azure AI Agent Service APIs|
 
 ## Content Owners
 
