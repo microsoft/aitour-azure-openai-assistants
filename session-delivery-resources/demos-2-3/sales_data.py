@@ -119,8 +119,6 @@ class SalesData:
             raise ConnectionError(
                 "Database connection is not established. Call connect() first.")
 
-        print(f"\nQuery: {query}\n")
-
         try:
             result = pd.read_sql_query(query, self.conn)
             if result.empty:
