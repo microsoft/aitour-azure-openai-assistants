@@ -1,5 +1,4 @@
 import json
-import os
 import sqlite3
 import pandas as pd
 from pydantic import BaseModel
@@ -33,7 +32,8 @@ class SalesData:
     def _fetch_single_column(self, query: str) -> list:
         """Execute a query and return results from a single column as a list."""
         if self.conn is None:
-            raise ConnectionError("Database connection is not established. Call connect() first.")
+            raise ConnectionError(
+                "Database connection is not established. Call connect() first.")
 
         cursor = None
         try:
@@ -55,7 +55,8 @@ class SalesData:
     def get_column_info(self, table_name: str) -> list:
         """Return a list of column names and their types for a given table."""
         if self.conn is None:
-            raise ConnectionError("Database connection is not established. Call connect() first.")
+            raise ConnectionError(
+                "Database connection is not established. Call connect() first.")
 
         cursor = None
         try:
@@ -84,9 +85,12 @@ class SalesData:
             ]
 
             regions = self.get_unique_values("region", "sales_data")
-            product_types = self.get_unique_values("product_type", "sales_data")
-            product_categories = self.get_unique_values("main_category", "sales_data")
-            reporting_years = list(map(str, self.get_unique_values("year", "sales_data")))
+            product_types = self.get_unique_values(
+                "product_type", "sales_data")
+            product_categories = self.get_unique_values(
+                "main_category", "sales_data")
+            reporting_years = list(
+                map(str, self.get_unique_values("year", "sales_data")))
 
             return "\n".join(
                 table_info
@@ -100,43 +104,24 @@ class SalesData:
         except sqlite3.Error as e:
             return f"An error occurred while generating database info: {e}"
 
-    def fetch_sales_data_using_sqlite_query(self, query: str) -> QueryResults:
-        """Execute an SQL query and return results in display and JSON formats."""
+    def fetch_sales_data_using_sqlite_query(self, query: str) -> str:
+        """
+        Execute an SQL query and return results in display and JSON formats.
+        :param query: The dynamic SQL query to execute
+        :rtype: str
+        """
 
         if self.conn is None:
-            raise ConnectionError("Database connection is not established. Call connect() first.")
-        
+            raise ConnectionError(
+                "Database connection is not established. Call connect() first.")
+
         print(f"\nQuery: {query}\n")
-        
+
         try:
             result = pd.read_sql_query(query, self.conn)
             if result.empty:
                 return json.dumps({"sales_query": "The query returned no results. Try a different query."})
             return json.dumps({"sales_query": result.to_dict(orient="records")})
         except sqlite3.Error as e:
-            return json.dumps({"error": str(e), "query": query})
-
-        # cursor = None
-        # try:
-        #     cursor = self.conn.cursor()
-        #     cursor.execute(query)
-        #     rows = cursor.fetchall()
-        #     columns = [desc[0] for desc in cursor.description]
-
-        #     if not rows:
-        #         data_results.display_format = "The query returned no results. Try a different query."
-        #     else:
-        #         data = pd.DataFrame(rows, columns=columns)
-        #         data_results.display_format = data.to_string(index=False)
-        #         data_results.json_format = data.to_json(index=False, orient="split")
-
-        # except sqlite3.Error as e:
-        #     error_message = f"Query failed with error: {e}"
-        #     data_results.display_format = error_message
-        #     data_results.json_format = json.dumps({"error": str(e), "query": query})
-
-        # finally:
-        #     if cursor:
-        #         cursor.close()
-
-        # return data_results
+            # pass the error back to the model so it can reevaluate the query
+            return json.dumps({"fetch_sales_data_using_sqlite_query error": str(e), "query": query})
