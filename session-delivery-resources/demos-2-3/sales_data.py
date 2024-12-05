@@ -16,10 +16,14 @@ class SalesData:
         self.conn = None
 
     def connect(self) -> None:
-        """Establish a connection to the SQLite database."""
+        """
+        The LLM is generating dynamic SQL queries, so we want to ensure that the connection is read-only.
+        Super important to prevent data corruption or injection attacks.
+        """
         try:
-            self.conn = sqlite3.connect(DATA_BASE, uri=True)
-            print("Database connection opened.")
+            db_uri = f"file:{DATA_BASE}?mode=ro"  # Use URI with read-only mode
+            self.conn = sqlite3.connect(db_uri, uri=True)
+            print("Database connection opened in read-only mode.")
         except sqlite3.Error as e:
             print(f"An error occurred: {e}")
 
