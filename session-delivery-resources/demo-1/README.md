@@ -1,19 +1,18 @@
 # Explore Contoso Retail Data
 
-There are two demos for demo 1 in this session. The preferred demo is the first, but you own the session, so choose the demo that best suits your style.
+<!-- There are two demos for demo 1 in this session. The preferred demo is the first, but you own the session, so choose the demo that best suits your style.
 
 1. [Contoso Sales Assistant built with Chainlit and the Azure OpenAI Assistants API](#contoso-sales-assistant-built-with-chainlit-and-the-azure-openai-assistants-api) (Preferred demo).
-2. [Contoso Sales Assistant built with Azure AI Studio Assistants API (Preview) Playground](#contoso-sales-assistant-built-with-azure-ai-studio-assistants-api-preview-playground) (Backup demo).
+2. [Contoso Sales Assistant built with Azure AI Studio Assistants API (Preview) Playground](#contoso-sales-assistant-built-with-azure-ai-studio-assistants-api-preview-playground) (Backup demo). -->
 
+## Contoso Sales Agent built with Chainlit and the Azure AI Agent Service
 
-## Contoso Sales Assistant built with Chainlit and the Azure OpenAI Assistants API
+<!-- **This is the preferred demo for demo 1** -->
 
-**This is the preferred demo for demo 1**
-
-1. **The applications is deployed to Azure**, follow the instructions in the [Contoso Sales AI Assistant Docs](https://azure-samples.github.io/contoso-sales-azure-openai-assistants-api/) to interact with the assistant. You'll find complete information about the application, a recorded video, and a demo script.
+1. **The applications is deployed to Azure**, follow the instructions in the [Contoso Sales Azure AI Agent Service Docs](https://azure-samples.github.io/contoso-sales-azure-openai-assistants-api/) to interact with the assistant. You'll find complete information about the application, a recorded video, and a demo script.
 2. There is a **silent demo recording that you can use as a demo backup**. Atm, this is not in the PowerPoint deck, but you can find it in the [resources folder](https://github.com/microsoft/aitour-azure-openai-assistants/tree/main/session-delivery-resources/demo-1/resources) for this repo.
 
-## Contoso Sales Assistant built with Azure AI Studio Assistants API (Preview) Playground
+<!-- ## Contoso Sales Assistant built with Azure AI Studio Assistants API (Preview) Playground
 
 This is a **backup demo** should you decide not to use the Chainlit demo. The Azure AI Studio Assistants API (Preview) Playground is a powerful tool for data analysis and visualization.
 
@@ -216,4 +215,4 @@ Throughout the demo, we learned how to utilize the Azure AI Studio Assistants AP
 
 1. **Conversational Guidance**: The user can direct the conversation, and the assistant provides answers and visualizations based on the data.
 2. **Dynamic Code Generation**: The model interprets the conversation and dynamically generates code to respond to queries, executing it via the Code Interpreter.
-3. **Natural Language Queries**: Users can pose questions in natural language, significantly simplifying the process of data analysis and visualization.
+3. **Natural Language Queries**: Users can pose questions in natural language, significantly simplifying the process of data analysis and visualization. -->

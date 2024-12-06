@@ -5,14 +5,16 @@ https://dcbadge.vercel.app/api/server/ByRwuEEgH4)](https://discord.com/invite/By
 
 ## Session Description
 
-The Azure AI Agent Service allows you to build conversational agents that can understand and respond to user inputs. You can use the API to automate tasks, provide information, or guide users through a process.
+The Azure AI Agent Service allows you to build semi-autonomous software that can be given a goal and will work to achieve that goal without you knowing in advance exactly how it's going to do that or what steps it's going to take. This is a powerful tool for automating tasks and processes that are too complex to be easily automated with traditional software.
 
-The Azure AI Agent Service is not the only way to build conversational agents, but it offers several advantages:
+## What sets Azure AI Agent Service apart?
 
-1. **Simplicity**: The API abstracts away the complexity of building a conversational agent, allowing you to focus on the content and logic of the conversation.
-2. **Scalability**: The API is designed to handle a large number of concurrent users, making it suitable for production use.
-3. **Customization**: The API allows you to customize the behavior of the agent by providing training data and defining conversational flows.
-4. **Integration**: The API can be integrated with other services and systems, allowing you to build agents that interact with external data sources.
+In our experience talking to hundreds of organizations, we have learned that developing secure, reliable agents rapidly requires four primary ingredients:
+
+1. **Rapidly develop and automate processes:** Agents need to seamlessly integrate with the right tools, systems and APIs to perform deterministic or non-deterministic actions.
+1. **Integrate with extensive memory and knowledge connectors:** Agents need to manage conversation state and connect with internal and external knowledge sources to have the right context to complete a process.
+1. **Flexible model choice:** Agents built with the appropriate model for its task can enable better integration of information from multiple data types, yield better results for task-specific scenarios, and improve cost efficiencies in scaled agent deployments.
+1. **Built-in enterprise readiness:** Agents need to be able to support an organization's unique data privacy and compliance needs, scale with an organization's needs, and complete tasks reliably and with high quality.
 
 ## Learning Outcomes
 
@@ -32,7 +34,7 @@ The Azure AI Agent Service is not the only way to build conversational agents, b
 
 | Resources          | Links                             | Description        |
 |:-------------------|:----------------------------------|:-------------------|
-| Future Learning 1  | [Getting started with Azure AI Agent Service](https://techcommunity.microsoft.com/blog/azure-ai-services-blog/introducing-azure-ai-agent-service/4298357) | Learn more about the Azure AI AI Agent Service|
+| Future Learning 1  | [Getting started with Azure AI Agent Service](https://techcommunity.microsoft.com/blog/azure-ai-services-blog/introducing-azure-ai-agent-service/4298357) | Learn more about the Azure AI Agent Service|
 | Future Learning 2  | [Azure AI Agent Service API Documentation](https://learn.microsoft.com/en-us/python/api/overview/azure/ai-projects-readme) | Learn more about Azure AI Agent Service APIs|
 
 ## Content Owners

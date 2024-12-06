@@ -18,6 +18,7 @@ These demos were tested with Azure OpenAI GPT-4o model. For best results use the
     OPENAI_KEY=
     OPENAI_VERSION=2024-05-01-preview
     OPENAI_GPT_DEPLOYMENT=
+    PROJECT_CONNECTION_STRING=
     ```
 
 ## Demos 2 and 3
@@ -36,11 +37,15 @@ The objective is to learn about Azure OpenAI Function Calling using the Azure Op
 
 ### Demo 3
 
-The objective is to learn about Azure OpenAI Assistants using the Azure OpenAI API. There are copious notes in the Jupyter Notebook to help you understand the code.
+#### Deploy Azure AI Agent Service Resources
+
+
+
+The objective is to learn about Azure AI Agent Service. There are copious notes in the Jupyter Notebook to help you understand the code.
 
 1. Run the Jupyter Notebook **demo-3-contoso-sales-analysis.ipynb**.
-1. Set up the .env file with the Azure OpenAI key, endpoint, and deployment.
-1. Run the **[Contoso Sales Analysis Assistant](demo-3-contoso-sales-analysis.ipynb)** Jupyter Notebook. Note, you'll be prompted to select a kernel source. Select the Python Environments, then select the **Recommended** Python environment.
+2. Set up the .env file with the Azure OpenAI key, endpoint, and deployment.
+3. Run the **[Contoso Sales Analysis with Azure AI Agent Service](demo-3-contoso-sales-analysis-agents-service.ipynb)** Jupyter Notebook. Note, you'll be prompted to select a kernel source. Select the Python Environments, then select the **Recommended** Python environment.
 
 ### Demo 3 with Azure AI Agents Service
 
@@ -49,20 +54,24 @@ The Azure AI Agent Service is currently in preview, so to use it you need to req
 
 In addition to the pre-requisites listed above, to run [demo-3-contoso-sales-analysis-agents-service.ipynb](demo-3-contoso-sales-analysis-agents-service.ipynb), you need the following:
 
-1. An Azure AI Hub and an Azure AI Project in Azure AI Foundry;
-1. An Azure OpenAI resource or an Azure AI resource connected to your project;
-1. A gpt-4o model deployment within your project.
+1. At the time of writing (Dec 6, 2024), the Azure AI Agent Service is in private preview. You'll need to request access to the [preview program](https://nam.dcv.ms/nzy5CEG6Br).
+2. Follow the manual deployment steps in the [AI Agents Quick Start](https://github.com/Azure/azure-ai-agents) repo and deploy using the **basic-agent-keys.bicep** file to create an Azure AI Project.
+3. At the time of writing the bicep deploys a **gpt-4o-mini** model. You need to manually deploy a **gpt-4o** model from the [Azure AI Foundry portal](https://ai.azure.com) into the newly created project.
+4. Follow the instructions to create to [Create an Agent connection string](https://github.com/Azure/azure-ai-agents/blob/main/quickstart.md#create-an-agent)
+5. Set up the .env file variable **PROJECT_CONNECTION_STRING** to the connection string you just created.
+6. Restart the demo 3 notebook to load the new environment variable and run the code in the notebook.
+7. Finally, login to your Azure AI Foundry account using the Azure CLI. From VS Code are the Jupiter notebook, open a new terminal and run the following command to install the required libraries:
 
-Learn how to create an Azure AI Foundry Project and connect it to an Azure OpenAI resource [here](https://learn.microsoft.com/azure/ai-studio/how-to/create-projects?tabs=ai-studio).
-Then go through this [quickstart](https://learn.microsoft.com/azure/ai-studio/quickstarts/get-started-playground#deploy-a-chat-model) to create a gpt-4o model deployment.
-
-Next, set up the .env file with the Azure AI Project connection string. You can find the connection string in the Azure AI Foundry portal, under the project details in the overview page.
-
-Finally, login to your Azure AI Foundry account using the Azure CLI:
-
-```bash
+    ```bash
     az login --tenant <your-tenant-id>
-```
+    ```
+
+## References
+
+1. Learn how to create an Azure AI Foundry Project and connect it to an Azure OpenAI resource [here](https://learn.microsoft.com/azure/ai-studio/how-to/create-projects?tabs=ai-studio).
+1. Then go through this [quickstart](https://learn.microsoft.com/azure/ai-studio/quickstarts/get-started-playground#deploy-a-chat-model) to create a gpt-4o model deployment.
+
+
 
 and select the subscription that has been allowlisted for the service private preview.
 

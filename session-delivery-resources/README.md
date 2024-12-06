@@ -17,11 +17,11 @@ code.
 |-------------------|----------------------------------|-------------------|
 | PowerPoint        | - [Presentation](https://aka.ms/AArxlty) | Slides, [Additional Languages](https://github.com/microsoft/aitour-azure-openai-assistants/blob/main/session-delivery-resources/README.md#slides-in-additional-languages) |
 | PPT Recording    | - [Presentation](https://aka.ms/AArxlty) | Embedded into the PowerPoint |
-| Videos            | - [Build sophisticated custom copilots with Azure AI Agent Service apps](https://build.microsoft.com/en-US/sessions/2ac412b4-3e6a-4107-8c62-910e18cbe94c) | Build 2024 |
-| Videos            | - [OpenAI Assistants API – Course for Beginners](https://www.youtube.com/watch?v=qHPonmSX4Ms&t=10648s) | YouTube freeCodeCamp.org |
+| Videos            | - [Introducing Azure AI Foundry Agent Service to scale your AI agents](https://ignite.microsoft.com/en-US/sessions/BRK102?source=sessions) | Ignite 2024 |
+| Videos            | - [Build sophisticated custom copilots with Azure AI Agent Service apps](https://build.microsoft.com/en-US/sessions/2ac412b4-3e6a-4107-8c62-910e18cbe94c) | Build 2024 Assistant API but a good grounding in concepts |
 | Demo 1            | - [Introduction to the Azure OpenAI Assistants Playground](demo-1/README.md) | Silent recording embedded in the slides  |
 | Demo 2            | - [Introduction to Azure OpenAI Chat Completion Function Calling](demos-2-3/demo-2-function-calling.ipynb) | Silent recording embedded in the slides  |
-| Demo 3            | - [Introduction to the Asistants API SDK](demos-2-3/demo-3-contoso-sales-analysis.ipynb) | Silent recording embedded in the slides |
+| Demo 3            | - [Introduction to the Assistants API SDK](demos-2-3/demo-3-contoso-sales-analysis.ipynb) | Silent recording embedded in the slides - Note, this will be updated to Azure AI Agent Service|
 
 ## Get Started
 
@@ -37,21 +37,22 @@ The [slides](https://aka.ms/AArxlty) have presenter notes in each part of the se
 
 ### Timing
 
-| Time        | Description
---------------|-------------
-0:00 - 5:00   | Intro to the session
-0:05 - 5:00   | Demo: Azure AI Studio Assistants Playground
-10:00 - 20:00  | Introduction to Azure OpenAI Assistants and Azure OpenAI Chat Completion Function Calling
-20:00 - 25:00 | Demo 2: Introduction to Azure OpenAI Chat Completion Function Calling
-25:00 - 35:00 | Introductions to the Asistants API
-35:00 - 40:00 | Demo 3: Introduction to the Asistants API SDK
-40:00 - 45:00 | Session review
+| Time        | Description |
+|--------------|-------------|
+|0:00 - 5:00   | Intro to the session |
+|0:05 - 5:00   | Demo 1: Contoso Sales Agent Conversational UX |
+|10:00 - 20:00  | Introduction to Azure OpenAI Assistants and Azure OpenAI Chat Completion Function Calling |
+|20:00 - 25:00 | Demo 2: Introduction to Azure OpenAI Chat Completion Function Calling |
+|25:00 - 35:00 | Introductions to the Assistants API |
+|35:00 - 40:00 | Demo 3: Introduction to the Azure AI Agent Service |
+|40:00 - 45:00 | Session review |
 
 ### Slides in additional languages
-| Language | Last updated | 
+
+| Language | Last updated |
 |------------------- | ---- |
-| [Spanish](https://aka.ms/AAs7ett) | 2024.09.16 | 
-| [Portuguese](https://aka.ms/AAs7etx) | 2024.09.16| 
+| [Spanish](https://aka.ms/AAs7ett) | 2024.09.16 |
+| [Portuguese](https://aka.ms/AAs7etx) | 2024.09.16|
 
 ## Deployment / Preparation
 
@@ -64,8 +65,10 @@ The [slides](https://aka.ms/AArxlty) have presenter notes in each part of the se
 Demo walkthroughs can be found embedded in the PowerPoint slides.
 
 ## Change Log
+
 Here is a log of the changes made to this file:
 
 | Date       | Changes |
 |------------|---------|
 | 2024.09.16 | Added Change log, Additional language section with Spanish and Portuguese PowerPoint slides |
+| 2024.12.06| Updated from Azure Assistants API to Azure AI Agent Service |
