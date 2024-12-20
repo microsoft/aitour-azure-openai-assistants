@@ -17,8 +17,9 @@ These demos were tested with Azure OpenAI GPT-4o model. For best results use the
     OPENAI_URI=
     OPENAI_KEY=
     OPENAI_VERSION=2024-05-01-preview
-    OPENAI_GPT_DEPLOYMENT=
+    MODEL_DEPLOYMENT_NAME=
     PROJECT_CONNECTION_STRING=
+    BING_CONNECTION_NAME=
     ```
 
 ## Demos 2 and 3
