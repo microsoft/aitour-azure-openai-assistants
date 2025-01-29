@@ -15,13 +15,15 @@ code.
 
 | Resources          | Links                            | Description |
 |-------------------|----------------------------------|-------------------|
-| PowerPoint        | - [Presentation](https://aka.ms/AArxlty) | Slides, [Additional Languages](https://github.com/microsoft/aitour-azure-openai-assistants/blob/main/session-delivery-resources/README.md#slides-in-additional-languages) |
-| PPT Recording    | - [Presentation](https://aka.ms/AArxlty) | Embedded into the PowerPoint |
+| PowerPoint        | - [Presentation](https://aka.ms/AAu57kq) | Slides, [Additional Languages](https://github.com/microsoft/aitour-azure-openai-assistants/blob/main/session-delivery-resources/README.md#slides-in-additional-languages) |
+| PPT Recording    | - [Presentation](https://aka.ms/AAu57kq) | Embedded into the PowerPoint |
 | Videos            | - [Introducing Azure AI Foundry Agent Service to scale your AI agents](https://ignite.microsoft.com/en-US/sessions/BRK102?source=sessions) | Ignite 2024 |
 | Videos            | - [Build sophisticated custom copilots with Azure AI Agent Service apps](https://build.microsoft.com/en-US/sessions/2ac412b4-3e6a-4107-8c62-910e18cbe94c) | Build 2024 Assistant API but a good grounding in concepts |
-| Demo 1            | - [Introduction to the Azure OpenAI Assistants Playground](demo-1/README.md) | Silent recording embedded in the slides  |
-| Demo 2            | - [Introduction to Azure OpenAI Chat Completion Function Calling](demos-2-3/demo-2-function-calling.ipynb) | Silent recording embedded in the slides  |
-| Demo 3            | - [Introduction to the Assistants API SDK](demos-2-3/demo-3-contoso-sales-analysis.ipynb) | Silent recording embedded in the slides - Note, this will be updated to Azure AI Agent Service|
+| Demo 1            | - [Explore Contoso Retail Data with Contoso Sales Agent](demo-1/README.md) | Silent recording embedded in the slides  |
+| Demo 2            | - [Function Calling and Dynamic SQL Generation](demo-2/README.md) | Silent recording embedded in the slides  |
+| Demo 3            | - [Getting started with the Code Interpreter](demo-3/README.md) | Silent recording embedded in the slides |
+| Demo 4            | - [Grounding Conversations with Documents](demo-4/README.md) | Silent recording embedded in the slides |
+| Demo 5            | - [Grounding with Bing Search](demo-5/README.md) | Silent recording embedded in the slides |
 
 ## Get Started
 
@@ -29,23 +31,22 @@ This training repository is divided in to the following sections:
 
 | [Slides](#slides) | [Demos](demos/README.md) | [Deployment](deployment/README.md) |
 |-------------------|---------------------------|--------------------------------------|
-| 28 slides - 30 minutes| 3 demos - 15 minutes | Demo setup
+| 13 slides - 20 minutes| 5 demos - 25 minutes | Demo setup
 
 ## Slides
 
-The [slides](https://aka.ms/AArxlty) have presenter notes in each part of the session
+The [slides](https://aka.ms/AAu57kq) have presenter notes in each part of the session
 
 ### Timing
 
 | Time        | Description |
 |--------------|-------------|
-|0:00 - 5:00   | Intro to the session |
-|0:05 - 5:00   | Demo 1: Contoso Sales Agent Conversational UX |
-|10:00 - 20:00  | Introduction to Azure OpenAI Assistants and Azure OpenAI Chat Completion Function Calling |
-|20:00 - 25:00 | Demo 2: Introduction to Azure OpenAI Chat Completion Function Calling |
-|25:00 - 35:00 | Introductions to the Assistants API |
-|35:00 - 40:00 | Demo 3: Introduction to the Azure AI Agent Service |
-|40:00 - 45:00 | Session review |
+|0:00 - 3:00   | Intro to the session |
+|3:00 - 8:00   | Demo 1: Explore Contoso Retail Data with Contoso Sales Agent |
+|8:00 - 13:00  | Introduction to AI Agents and Azure AI Agent Service |
+|13:00 - 23:00 | Introduction to Function Calling |
+|23:00 - 43:00 | Demo 2/3/4/5 |
+|43:00 - 45:00 | Session review |
 
 ### Slides in additional languages
 
@@ -56,13 +57,13 @@ The [slides](https://aka.ms/AArxlty) have presenter notes in each part of the se
 
 ## Deployment / Preparation
 
-1. Access to a deployment of GPT-4o
-1. GitHub Codespaces or VS Code Docker for running the code demos 2 and 3. See the [demos](demos-2-3/README.md) for more information
+1. An Azure subscription with access to a deployment of GPT-4o
+1. GitHub Codespaces or VS Code Docker to deploy and run the e-2-e Contoso Sales Agent with Chainlit UI. See [demo 1](demo-1/README.md) for more information
 1. No other resources are required
 
 ## Demos
 
-Demo walkthroughs can be found embedded in the PowerPoint slides.
+Demos walkthrough can be found embedded in the PowerPoint slides.
 
 ## Change Log
 
@@ -72,3 +73,4 @@ Here is a log of the changes made to this file:
 |------------|---------|
 | 2024.09.16 | Added Change log, Additional language section with Spanish and Portuguese PowerPoint slides |
 | 2024.12.06| Updated from Azure Assistants API to Azure AI Agent Service |
+| 2025.01.29| Updated to reflect last content refresh|
