@@ -18,17 +18,15 @@ In our experience talking to hundreds of organizations, we have learned that dev
 
 ## Learning Outcomes
 
+1. Understand the scenario for the Contoso Sales Agent sample
 1. Understand the Azure AI Agent Service
-<!-- 1. Introductions to the Azure AI Agent Service Playground -->
-1. Understand Azure OpenAI Chat Completion Function Calling
-1. Learn how to build conversational agents
+1. Learn how to build an [e-2-e Contoso Sales Agent sample](https://aka.ms/aitour/wrk552) with Azure AI Agent service
 
 ## Technology Used
 
 1. Azure AI Agent Service
-<!-- 2. Azure AI Agent Service Playground -->
-1. Jupyter Notebooks
-1. OpenAI SDK
+1. Azure AI Foundry Python SDK
+1. SQLite Database
 
 ## Additional Resources and Continued Learning
 
