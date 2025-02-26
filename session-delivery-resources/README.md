@@ -18,7 +18,7 @@ code.
 | PowerPoint        | - [Presentation](https://aka.ms/AAu57kq) | Slides, [Additional Languages](https://github.com/microsoft/aitour-azure-openai-assistants/blob/main/session-delivery-resources/README.md#slides-in-additional-languages) |
 | PPT Recording    | - [Presentation](https://aka.ms/AAu57kq) | Embedded into the PowerPoint |
 | Videos            | - [Introducing Azure AI Foundry Agent Service to scale your AI agents](https://ignite.microsoft.com/en-US/sessions/BRK102?source=sessions) | Ignite 2024 |
-| Videos            | - [Build sophisticated custom copilots with Azure AI Agent Service apps](https://build.microsoft.com/en-US/sessions/2ac412b4-3e6a-4107-8c62-910e18cbe94c) | Build 2024 Assistant API but a good grounding in concepts |
+| Session delivery recording            | - [Microsoft Reactor session](https://www.youtube.com/watch?v=_4xsbzdaA4E) | Session delivery recording at Microsoft Reactor |
 | Demo 1            | - [Explore Contoso Retail Data with Contoso Sales Agent](demo-1/README.md) | Silent recording embedded in the slides  |
 | Demo 2            | - [Function Calling and Dynamic SQL Generation](demo-2/README.md) | Silent recording embedded in the slides  |
 | Demo 3            | - [Getting started with the Code Interpreter](demo-3/README.md) | Silent recording embedded in the slides |
