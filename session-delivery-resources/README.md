@@ -54,6 +54,7 @@ The [slides](https://aka.ms/AAu57kq) have presenter notes in each part of the se
 |------------------- | ---- |
 | [Spanish](https://aka.ms/AAs7ett) | 2024.09.16 |
 | [Portuguese](https://aka.ms/AAs7etx) | 2024.09.16|
+| [Korean](https://aka.ms/AAv6bt7) | 2025.04.08  |
 
 ## Deployment / Preparation
 
