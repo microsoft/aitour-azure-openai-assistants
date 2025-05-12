@@ -1,4 +1,4 @@
-# Build your code-first app with Azure AI Agent Service
+# Build your code-first agent with Azure AI Foundry
 
 [![Azure AI Community Discord](
 https://dcbadge.vercel.app/api/server/ByRwuEEgH4)](https://discord.com/invite/ByRwuEEgH4?WT.mc_id=aiml-00001-leestott)
